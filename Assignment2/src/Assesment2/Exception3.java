@@ -1,9 +1,8 @@
-package tcs;
-
+package Assesment2;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+public class Exception3 {
 
-public class set3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -20,11 +19,9 @@ public class set3 {
             System.out.println("Arithmetic Exception: / by zero");
         } catch (InputMismatchException e) {
             System.out.println("Input Mismatch Exception: Please enter valid integer values.");
-            scanner.next(); // Clear invalid input
+            scanner.next(); 
         } finally {
             scanner.close();
         }
     }
 }
-
-
